@@ -1,5 +1,5 @@
 {% set name = "napari-tiff" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_tiff-{{ version }}.tar.gz
-  sha256: d78f34991b61a44b0f3a547018a5db5b724ac05b2e6fd74f38de32c186158564
+  sha256: 1197b93ad5e0223d1879e9f466b76c2f306ec6b2a1fff97007750eacfe396bc1
 
 build:
   noarch: python
