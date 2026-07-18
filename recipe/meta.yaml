@@ -1,5 +1,5 @@
 {% set name = "napari-tiff" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_tiff-{{ version }}.tar.gz
-  sha256: 1197b93ad5e0223d1879e9f466b76c2f306ec6b2a1fff97007750eacfe396bc1
+  sha256: d3332a1ed8026dc88621ef5c85c8c364849ebe6a3509940e68ea71550b843cc0
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - dask-core >=2021.10.0
     - imagecodecs >=2023.8.12
     - fsspec
     - kerchunk
