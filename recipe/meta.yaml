@@ -24,6 +24,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - dask-core >=2021.10.0
     - imagecodecs >=2023.8.12
     - fsspec
     - kerchunk
